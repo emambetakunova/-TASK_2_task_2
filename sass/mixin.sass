@@ -1,0 +1,47 @@
+$font: 'Montserrat', sans-serif
+$tablet-up: '(min-width: 768px)'
+$desktop-up: '(min-width: 1024px)'
+$colorDark: #323232
+$colorWhite: #ffffff
+$colorDefault: #999999
+$backgroundDefault: #E5E5E5
+$backgroundDefault2: #F6F6F8
+$fontSize: 16px
+
+=tablet
+  @media #{$tablet-up}
+    @content
+
+
+=desktop
+  @media #{$desktop-up}
+    @content
+
+%btn
+  width: 200px
+  height: 45px
+  background: #4985FF
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.25)
+  border: none
+  border-radius: 30px
+  padding: 2%
+  margin-top: 40px
+  a
+    color: $colorWhite
+    display: block
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    text-decoration: none
+
+%sub-title
+  font-weight: 700
+  font-size: 36px
+  line-height: 53px
+  text-align: center
+  color: $colorDark
+
+%text
+  font-size: 16px
+  line-height: 25px
+  color: $colorDefault

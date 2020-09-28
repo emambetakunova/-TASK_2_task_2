@@ -1,0 +1,44 @@
+@import mixin
+
+body
+  font-family: $font
+  color: $colorDefault
+  background: $backgroundDefault
+  font-size: $fontSize
+  line-height: 1.8
+  margin: 0
+  min-width: 320px
+
+.container
+  min-width: 320px
+  max-width: 1140px
+  margin: 0 auto
+  padding: 0 15px
+
+.promo
+  background: url("../images/promo-bg.jpg") center center no-repeat 
+  .promo-block
+    padding: 160px 0
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    span
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      color: $colorWhite
+      display: block
+    h1
+      font-weight: 500
+      font-size: 32px
+      line-height: 64px
+      text-align: center
+      color: $colorWhite
+      margin: 0
+      padding: 0
+      +tablet
+        font-size: 48px
+    .btn
+      @extend %btn
