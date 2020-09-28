@@ -1,4 +1,4 @@
-.promo .promo-block .btn {
+.promo .promo-block .btn, .info .info-block .btn {
   width: 200px;
   height: 45px;
   background: #4985FF;
@@ -6,8 +6,11 @@
   border: none;
   border-radius: 30px;
   padding: 2%;
-  margin-top: 40px; }
-  .promo .promo-block .btn a {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .promo .promo-block .btn a, .info .info-block .btn a {
     color: #ffffff;
     display: block;
     font-size: 16px;
@@ -15,14 +18,14 @@
     text-align: center;
     text-decoration: none; }
 
-.info .info-block .sub-title {
+.info .info-block .sub-title, .about-us .about-us-block .sub-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 53px;
   text-align: center;
   color: #323232; }
 
-.info .info-block .text {
+.info .info-block .text, .about-us .about-us-block .text {
   font-size: 16px;
   line-height: 25px;
   color: #999999; }
@@ -117,5 +120,25 @@ body {
             display: flex;
             justify-content: center;
             align-items: center; }
+
+.about-us {
+  background: #E5E5E5; }
+  .about-us .about-us-block {
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px; }
+    @media (min-width: 1024px) {
+      .about-us .about-us-block {
+        grid-template-columns: 1fr 500px;
+        grid-column-gap: 80px; } }
+    .about-us .about-us-block .sub-title {
+      text-align: start; }
+    .about-us .about-us-block a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: #4985FF; }
 
 /*# sourceMappingURL=style.css.map */
