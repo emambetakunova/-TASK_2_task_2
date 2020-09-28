@@ -1,4 +1,4 @@
-.promo .promo-block .btn, .info .info-block .btn {
+.promo .promo-block .btn, .info .info-block .btn, .gallery .gallery-block .btn {
   width: 200px;
   height: 45px;
   background: #4985FF;
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
 }
-.promo .promo-block .btn a, .info .info-block .btn a {
+.promo .promo-block .btn a, .info .info-block .btn a, .gallery .gallery-block .btn a {
   color: #ffffff;
   display: block;
   font-size: 16px;
@@ -20,7 +20,7 @@
   text-decoration: none;
 }
 
-.info .info-block .sub-title, .about-us .about-us-block .sub-title {
+.info .info-block .sub-title, .about-us .about-us-block .sub-title, .gallery .gallery-block .sub-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 53px;
@@ -28,7 +28,7 @@
   color: #323232;
 }
 
-.info .info-block .text, .about-us .about-us-block .text {
+.info .info-block .text, .about-us .about-us-block .text, .gallery .gallery-block .text {
   font-size: 16px;
   line-height: 25px;
   color: #999999;
@@ -204,4 +204,36 @@ body {
   font-size: 36px;
   line-height: 53px;
   color: #323232;
+}
+
+.gallery {
+  background: #E5E5E5;
+  padding: 70px 15px;
+}
+.gallery .gallery-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+.gallery .gallery-block .text {
+  text-align: center;
+  max-width: 730px;
+}
+.gallery .gallery-block .items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+}
+@media (min-width: 1024px) {
+  .gallery .gallery-block .items {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+.gallery .gallery-block .items img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

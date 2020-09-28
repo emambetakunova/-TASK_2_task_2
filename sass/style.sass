@@ -141,3 +141,31 @@ body
           font-size: 36px
           line-height: 53px
           color: $colorDark
+.gallery
+  background: $backgroundDefault
+  padding: 70px 15px
+  .gallery-block
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    flex-flow: column
+    .sub-title
+      @extend %sub-title
+    .text
+      @extend %text
+      text-align: center
+      max-width: 730px
+    .btn
+      @extend %btn
+    .items
+      display: grid
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+      +desktop
+        grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: 30px
+      img
+        display: block
+        width: 100%
+        height: auto
