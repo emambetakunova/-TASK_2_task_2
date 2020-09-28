@@ -3,7 +3,7 @@
 body
   font-family: $font
   color: $colorDefault
-  background: $backgroundDefault
+  background: $colorWhite
   font-size: $fontSize
   line-height: 1.8
   margin: 0
@@ -42,3 +42,53 @@ body
         font-size: 48px
     .btn
       @extend %btn
+.info
+  padding: 70px 0
+  .info-block
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .sub-title
+      @extend %sub-title
+      max-width: 730px
+    .text
+      @extend %text
+      text-align: center
+      max-width: 730px
+    .items
+      display: grid
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+      +desktop
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 30px
+      .item
+        display: grid
+        grid-template-columns: 110px 1fr
+        grid-column-gap: 17px
+        margin-top: 70px
+        span
+          font-weight: 600
+          font-size: 18px
+          line-height: 22px
+          color: $colorDark
+        p
+          max-width: 240px
+          margin: 0
+        .item-image
+          width: 110px
+          height: 110px
+          border: 1px solid #E0E0E0
+          border-radius: 50%
+          display: flex
+          justify-content: center
+          align-items: center
+          .item-inner-image
+            width: 90px
+            height: 90px
+            border: 1px solid #4985FF
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+

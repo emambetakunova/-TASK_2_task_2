@@ -15,10 +15,22 @@
     text-align: center;
     text-decoration: none; }
 
+.info .info-block .sub-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #323232; }
+
+.info .info-block .text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999; }
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #999999;
-  background: #E5E5E5;
+  background: #ffffff;
   font-size: 16px;
   line-height: 1.8;
   margin: 0;
@@ -56,5 +68,54 @@ body {
       @media (min-width: 768px) {
         .promo .promo-block h1 {
           font-size: 48px; } }
+
+.info {
+  padding: 70px 0; }
+  .info .info-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .info .info-block .sub-title {
+      max-width: 730px; }
+    .info .info-block .text {
+      text-align: center;
+      max-width: 730px; }
+    .info .info-block .items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px; }
+      @media (min-width: 1024px) {
+        .info .info-block .items {
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 30px; } }
+      .info .info-block .items .item {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        grid-column-gap: 17px;
+        margin-top: 70px; }
+        .info .info-block .items .item span {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #323232; }
+        .info .info-block .items .item p {
+          max-width: 240px;
+          margin: 0; }
+        .info .info-block .items .item .item-image {
+          width: 110px;
+          height: 110px;
+          border: 1px solid #E0E0E0;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .info .info-block .items .item .item-image .item-inner-image {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #4985FF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
