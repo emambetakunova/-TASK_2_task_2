@@ -85,7 +85,7 @@ body {
 }
 
 .info {
-  padding: 70px 0;
+  padding: 70px 15px;
 }
 .info .info-block {
   display: flex;
@@ -149,7 +149,7 @@ body {
   background: #E5E5E5;
 }
 .about-us .about-us-block {
-  padding: 70px 0;
+  padding: 70px 15px;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 30px;
@@ -169,4 +169,39 @@ body {
   line-height: 20px;
   text-decoration-line: underline;
   color: #4985FF;
+}
+.about-us .about-us-block .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  background: #E5E5E5;
+}
+.project-info .project-info-block {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+}
+@media (min-width: 1024px) {
+  .project-info .project-info-block {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 50px;
+  }
+}
+.project-info .project-info-block .item {
+  max-width: 112px;
+}
+.project-info .project-info-block .item .inner-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.project-info .project-info-block .item .inner-item span {
+  font-size: 36px;
+  line-height: 53px;
+  color: #323232;
 }

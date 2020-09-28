@@ -43,7 +43,7 @@ body
     .btn
       @extend %btn
 .info
-  padding: 70px 0
+  padding: 70px 15px
   .info-block
     display: flex
     justify-content: center
@@ -97,7 +97,7 @@ body
 .about-us
   background: $backgroundDefault
   .about-us-block
-    padding: 70px 0
+    padding: 70px 15px
     display: grid
     grid-template-columns: 1fr
     grid-row-gap: 30px
@@ -115,3 +115,29 @@ body
       line-height: 20px
       text-decoration-line: underline
       color: #4985FF
+    .item
+      img
+        display: block
+        width: 100%
+        height: auto
+.project-info
+  background: $backgroundDefault
+  .project-info-block
+    border-top: 1px solid #E0E0E0
+    padding-top: 70px
+    display: grid
+    grid-template-columns: 1fr
+    grid-row-gap: 30px
+    +desktop
+      grid-template-columns: repeat(5, 1fr)
+      grid-column-gap: 50px
+    .item
+      max-width: 112px
+      .inner-item
+        display: grid
+        grid-template-columns: 1fr 1fr
+        align-items: center
+        span
+          font-size: 36px
+          line-height: 53px
+          color: $colorDark
