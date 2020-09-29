@@ -206,36 +206,34 @@ body {
       position: absolute;
       top: -190px; }
       .video .video-block .player-block-wrapper .sub-title {
-        color: #ffffff; }
+        color: #ffffff;
+        padding-top: 70px; }
+        @media (min-width: 1024px) {
+          .video .video-block .player-block-wrapper .sub-title {
+            padding-top: 0; } }
       .video .video-block .player-block-wrapper .text {
         color: #ffffff; }
       .video .video-block .player-block-wrapper .player-block {
-        margin-top: 70px;
         position: relative; }
-        .video .video-block .player-block-wrapper .player-block .player-block-icon-wrapper a {
-          display: flex;
-          justify-content: center;
-          text-decoration: none;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 25px;
-          color: #ffffff;
-          width: 300px;
-          padding: 4%;
-          border: 1px solid #ffffff;
-          box-sizing: border-box;
-          border-radius: 200px;
+        .video .video-block .player-block-wrapper .player-block .player-block-icon-wrapper {
           position: absolute;
           top: calc(50% - 33px);
           left: 33%;
-          align-items: center; }
-          .video .video-block .player-block-wrapper .player-block .player-block-icon-wrapper a::before {
-            content: "";
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 60px;
-            height: 60px;
-            background: url("../images/play-icon.png") center center no-repeat; }
+          display: grid;
+          grid-template-columns: 60px 1fr;
+          border: 1px solid #ffffff;
+          box-sizing: border-box;
+          border-radius: 200px;
+          width: 300px;
+          padding: 2%; }
+          .video .video-block .player-block-wrapper .player-block .player-block-icon-wrapper a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #ffffff;
+            align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

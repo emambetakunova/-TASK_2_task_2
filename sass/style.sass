@@ -184,13 +184,25 @@ body
       .sub-title
         @extend %sub-title
         color: $colorWhite
+        padding-top: 70px
+        +desktop
+          padding-top: 0
       .text
         @extend %text
         color: $colorWhite
       .player-block
-        margin-top: 70px
         position: relative
         .player-block-icon-wrapper
+          position: absolute
+          top: calc(50% - 33px)
+          left: 33%
+          display: grid
+          grid-template-columns: 60px 1fr
+          border: 1px solid $colorWhite
+          box-sizing: border-box
+          border-radius: 200px
+          width: 300px
+          padding: 2%
           a
             display: flex
             justify-content: center
@@ -199,21 +211,5 @@ body
             font-size: 16px
             line-height: 25px
             color: $colorWhite
-            width: 300px
-            padding: 4%
-            border: 1px solid $colorWhite
-            box-sizing: border-box
-            border-radius: 200px
-            position: absolute
-            top: calc(50% - 33px)
-            left: 33%
             align-items: center
-            &::before
-              content: ''
-              position: absolute
-              top: 20px
-              left: 20px
-              width: 60px
-              height: 60px
-              background: url("../images/play-icon.png") center center no-repeat
 
