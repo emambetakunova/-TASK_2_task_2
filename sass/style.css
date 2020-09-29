@@ -291,7 +291,8 @@ body {
     grid-template-columns: 1fr; }
     @media (min-width: 1024px) {
       .footer .footer-block {
-        grid-template-columns: repeat(4, 1fr); } }
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px; } }
     .footer .footer-block .item .inner-title {
       text-align: start; }
     .footer .footer-block .item a {

@@ -364,6 +364,7 @@ body {
 @media (min-width: 1024px) {
   .footer .footer-block {
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
   }
 }
 .footer .footer-block .item .inner-title {
